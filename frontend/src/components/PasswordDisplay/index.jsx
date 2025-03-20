@@ -1,8 +1,16 @@
 import { useEffect } from 'react';
 import copyIcon from '../../assets/copy.png'
-import gearIcon from '../../assets/gear.png'
+import reloadIcon from '../../assets/reload.png'
 
 export function PasswordDisplay({ gerarSenha, senha }) {
+
+    function copyToClipboard () {
+        if (!senha) return;
+    
+        navigator.clipboard.writeText(senha)
+          .then(() => console.log("Senha copiada para a área de transferência!"))
+          .catch(err => console.error("Erro ao copiar senha:", err));
+      };
 
     useEffect(() => {
         gerarSenha();
@@ -14,7 +22,7 @@ export function PasswordDisplay({ gerarSenha, senha }) {
                 <input type='text' readOnly value={senha} className="block w-full p-4 text-gray-900 rounded-lg text-2xl"></input>
             </form>
             <div className="w-auto flex">
-                <button className="rounded cursor-pointer p-2 group relative">
+                <button onClick={ copyToClipboard } className="rounded cursor-pointer p-2 group relative">
                     <span className="absolute left-1/2 -top-8 transform -translate-x-1/2 opacity-0 
                    bg-gray-800 text-white text-xs px-2 py-1 rounded-md transition-opacity 
                    group-hover:opacity-100">
@@ -30,7 +38,7 @@ export function PasswordDisplay({ gerarSenha, senha }) {
                    group-hover:opacity-100">
                         Gerar
                     </span>
-                    <img src={gearIcon} alt="Ícone" width="40" height="40" />
+                    <img src={reloadIcon} alt="Ícone" width="40" height="40" />
                 </button>
             </div>
         </div>

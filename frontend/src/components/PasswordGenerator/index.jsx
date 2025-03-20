@@ -33,12 +33,12 @@ export function PasswordGenerator() {
 
 
     return (
-        <div className="flex flex-col size-auto self-center">
+        <section className="flex flex-col size-auto self-center min-h-screen">
             <PasswordDisplay gerarSenha={ gerarSenha } senha={ senha } />
             <PasswordOptions lenght={ charLenght } gerarSenha={ gerarSenha } 
             includeNumbers={ includeNumbers } includeUpperCase={ includeUpperCase } includeSymbols={ includeSymbols } includeLowerCase={ includeLowerCase }
             setLength={ setCharLenght } setIncludeNumber={ setIncludeNumbers } setIncludeUpperCase={ setIncludeUpperCase }  
             setIncludeSymmbols={ setIncludeSymmbols } setIncludeLowerCase={ setIncludeLowerCase } />
-        </div>
+        </section>
     );
 }
