@@ -1,4 +1,4 @@
-# Password Generator
+# ⚙️ Password Generator
 
 <img src="password-generator-img.png" alt="Imagem do projeto">
 
@@ -8,10 +8,10 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-  ✅ HTML5
-  ✅ CSS3
-  ✅ JavaScript
-  ✅ React
+  - ✅ HTML5
+  - ✅ CSS3
+  - ✅ JavaScript
+  - ✅ React
 
 ## 💻 Funcionalidades
 
@@ -28,8 +28,8 @@ Para usar o projeto, siga estas etapas:
 ```
 
   1. Clonar esse repositório
-  2. Instalar as dependências
-  3. npm run dev
+  2. Instalar as dependências (npm install)
+  3. Executar o projeto (npm run dev)
 
 ```
 
