@@ -1,6 +1,6 @@
 # Password Generator
 
-<img src="imagem.png" alt="Imagem do projeto">
+<img src="password-generator-img.png" alt="Imagem do projeto">
 
 ## 📝 Descrição
 
